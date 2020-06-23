@@ -4,7 +4,7 @@ from typing import List, Any
 import json
 import requests
 
-USAGE = "Usage: python {sys.argv[0]} [--help] | startIndex endIndex outputFileName]"
+USAGE = "Usage: Please pass valid arguements in the format --start [start_post] --end[ end_post ] --out [output_file]"
 responseTotal = {}
 start: int 
 end: int 
@@ -75,7 +75,7 @@ def validate(args: List[str]):
 
 def main() -> None:
     args = sys.argv[1:]
-    
+
     if not args:
         raise SystemExit(USAGE)
 
