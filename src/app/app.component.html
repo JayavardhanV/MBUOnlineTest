@@ -1,0 +1,35 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark" *ngIf="currentUser">
+  <div class="navbar-nav" style="width: 100%;">
+    <div class="row" style="width: 100%;">
+      <div class="col-3">
+        <a class="nav-item nav-link" routerLink="/" style="font-weight: 600;">Home</a>
+      </div>
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6" style="text-align: right; padding-right: 0;">
+            <a class="nav-item nav-link" routerLink="/posts"><span class="hoverText">Posts</span></a>
+          </div>
+          <div class="col-6">
+            <a class="nav-item nav-link" routerLink="/resource" style="padding-left: 0"><span class="hoverText">Resources</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3" style="text-align: right; ;">
+        <a class="nav-item nav-link" routerLink="/login">Log in</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="">
+  <div class="">
+    <div class="row">
+      <div class="col">
+        <!-- <app-notification></app-notification> -->
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

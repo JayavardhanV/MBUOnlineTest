@@ -1,0 +1,32 @@
+#login{
+    padding: 4rem 2rem;
+    background-image: url('../../../assets/background.png');
+    min-height: 707px;
+    .SignIn{
+        width: 27%;
+    padding:4%;
+    margin-left: 36%;
+    margin-top: 7%;
+    background-color: #fff;
+    height: 19rem;
+    padding-top: 2%;
+    }
+    .form-control{
+        border: 1px solid #495057;
+        &:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #495057 !important;
+            outline: 0;
+            box-shadow: 0 0 0 1px #495057 !important;
+        }
+    }
+    .alert{
+        i{
+            font-size: 1.8rem;
+            float: right;
+            color: indianred;
+            cursor: pointer;
+        }
+    }
+}

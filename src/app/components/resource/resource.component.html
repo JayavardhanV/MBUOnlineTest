@@ -1,0 +1,23 @@
+<div class="row" id="Resources">
+  <div class="card col-3" *ngFor='let card of resouces'>
+    <div class="row">
+      <div class="col-sm-12" style="background-color: #fff;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-6" style="font-weight: 600; padding-right: 0;">Resource Name</div>
+            <div class="col-sm-6" style="padding-left: 0;">:  {{card.name}}</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6" style="font-weight: 600; padding-right: 0;">Year</div>
+            <div class="col-sm-6" style="padding-left: 0;">:  {{card.year}}</div>
+          </div>
+          <div class="row card-text">
+            <div class="col-sm-12">
+              <div id="box" [ngStyle]="{'background-color': card.color}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

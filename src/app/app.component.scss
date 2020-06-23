@@ -1,0 +1,16 @@
+.jumbotron{
+    background-color: #fff !important;
+    // background-image: url('../assets/background.png');
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #343a40!important;
+}
+.hoverText
+{
+    padding-left: 8px;
+    padding-right: 8px;
+    &:hover{
+    border-bottom: 1px solid #343a40;
+    }
+}

@@ -1,0 +1,24 @@
+<div class="row" id="PostViewCards">
+  <div class="card col-3" *ngFor='let card of cardList'>
+    <div class="row">
+      <div class="col-sm-11" style="background-color: #fff;box-shadow: 5px 5px 10px;">
+        <div class="card-body">
+          <div class="row card-title">
+            <div class="col-sm-11">
+              <h5 [title]="card.title">{{card.title | trim}}</h5>
+            </div>
+            <div class="col-sm-1" style="padding-right: 11px; padding-left: 1px;"><i class="fa fa-trash-o" aria-hidden="true"
+                (click)="removeItem(card)" title="Remove Card"></i></div>
+          </div>
+          <div class="row card-text">
+            <div class="col-sm-11">
+              <p>{{card.body | trim}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">{{card.userId}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+#PostViewCards{
+    padding: 2rem 2rem;
+    .card{
+        font-size: 14px;
+        background-color: #fff;
+        border: 0;
+        color: #6c757d;
+    // margin-left: 5rem;
+    margin-bottom: 1rem;    
+    & .card-footer {
+        text-align: right;
+        padding: .75rem 1.25rem;
+        background-color:transparent;
+        border-top: 0px solid rgba(0,0,0,.125);
+        padding-top:0;
+    }
+    & .card-body{
+        padding-right:7px;
+        min-height: 220px;
+        p{
+            margin:0;
+        }
+        & .card-title{
+            h5{
+                white-space: nowrap; 
+                width: 16rem; 
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+        }
+            i
+            {
+                font-size: 1.35rem;
+                &:hover{
+                cursor: pointer;
+                color: red;
+                font-size: 1.65rem;
+            }
+        }
+        }
+       
+    }
+}
+}

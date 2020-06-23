@@ -1,0 +1,23 @@
+#Resources{
+    padding: 2rem 2rem;
+    .card{
+        border: none;
+        color: #6c757d;
+        // color:rgba(0, 0, 0, 0.125);
+        #box{
+            text-align: center;
+            display: block;
+            // float: left;
+            width: 15rem;
+            height: 10rem;
+            /* a small margin to separate the blocks */
+            margin-left: 2rem;
+            background-color: red;
+            margin-top:2rem;
+        }
+        .card-body{
+            border: 2px solid rgba(0,0,0,.125);
+            margin-bottom: 3rem;
+        }
+    }
+}
